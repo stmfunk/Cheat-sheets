@@ -1,0 +1,2 @@
+Datalog             :       Subset of Prolog used in database systems (deductive database systems).
+

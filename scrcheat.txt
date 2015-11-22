@@ -1,0 +1,5 @@
+CMD:
+    chdir dir/asd    :    To change directory
+    resize [+-]N     :    Change the size of current pane
+Ctrl-S  :   Split horizontally
+Ctrl-|  :   Split Vertically

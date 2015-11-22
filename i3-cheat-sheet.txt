@@ -1,0 +1,8 @@
+Change layout : $mod+Shift+[jhkl]
+Alt-scrollwheel-click   :   Paste into urxvt
+
+
+Amixer:
+    amixer sset Master 40%[+-]      :       To increase master volume or set it
+    amixer sset Master toggle       :       To toggle on or off master volume
+    
