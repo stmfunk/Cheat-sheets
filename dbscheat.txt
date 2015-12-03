@@ -1,2 +1,4 @@
 Datalog             :       Subset of Prolog used in database systems (deductive database systems).
 
+Embeded SQL using ecpg in C to write SQL code write in your C program.
+===========
