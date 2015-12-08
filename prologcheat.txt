@@ -2,3 +2,5 @@ help(functor)                       :       Give help on functor.
 
 display(Expr)                       :       Give prologs interpretation of Expr (sans infix i.e. specify bracketing).
 unify_with_occurs_check(X,f(X))     :       Perform the prolog unification algorithm that has an occurence check.
+
+length(L,N)                         :       True if length of L is N.
