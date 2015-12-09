@@ -1,0 +1,4 @@
+Splith      :       "
+Splitv      :       %
+
+Mod+ Alt+direction          :       Resize pane up or down.

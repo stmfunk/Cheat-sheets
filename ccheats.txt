@@ -1,0 +1,2 @@
+string.h            :       All the strcmp stuff
+stdlib              :       Contains rand().
