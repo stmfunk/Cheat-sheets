@@ -3,6 +3,9 @@ Ctrl-e      :   Go to end of command
 Ctrl-k      :   Delete from cursor to end of line
 Ctrl-u      :   Delete from cursor to beginning of line
 
+Alt-b       :   Move backwards one word.
+Alt-f       :   Move forwards one word.
+
 !!          :   Execute the previous command again
 
 http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/

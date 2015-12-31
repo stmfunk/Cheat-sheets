@@ -1,0 +1,2 @@
+Ctrl-A          :       Increment number under cursor
+Ctrl-X          :       Decrement number under cursor

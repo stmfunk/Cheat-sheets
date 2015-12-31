@@ -1,0 +1,14 @@
+ctype.h             :           File containing isalnum(), isalpha(), iscntrl(), isdigit(), isgraph(),
+                                islower(), isprint(), ispunct(), isspace(), isupper(), isxdigit(),
+                                tolower(), toupper(), functions
+
+string.h            :       All the strcmp stuff
+stdlib              :       Contains rand().
+
+Types
+=====
+
+double              :           More accurate than float.
+
+
+

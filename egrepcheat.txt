@@ -1,0 +1,8 @@
+FORMATTING
+==========
+\|        :       Logical or match (only works inside single quotes).
+
+OPTIONS
+=======
+-v          :       Invert matching (match what doesn't match).
+
