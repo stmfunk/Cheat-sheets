@@ -1,2 +1,8 @@
 Ctrl-A          :       Increment number under cursor
 Ctrl-X          :       Decrement number under cursor
+
+''              :       Go to last cursor location
+
+Substitution
+------------
+s/fg/&c/            :       To add c to all occurences of fg.

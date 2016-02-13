@@ -1,0 +1,7 @@
+Libs
+====
+gitpython       :       Library for manipulating git repositories.
+
+argparse
+---------
+

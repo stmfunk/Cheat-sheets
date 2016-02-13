@@ -1,0 +1,52 @@
+loadkeys            :       Load desired keyboard layout.
+
+ln                  :       see readlink
+
+readlink            :       readlink will give you the true location of a symlink.
+                            * -f    :   Follow links recursively until it finds a concrete
+                                        directory.
+top                 :       Show processes in use
+
+
+User Management
+---------------
+passwd usr          :       Manage user passwords.
+useradd usr         :       Add usr to users.
+usermod -a -G       :       Modify user add to group
+id usr              :       Give information about usr (groups in etc)
+visudo              :       Modify sudoers file
+
+wheel group         :       Group typically given sudo powers.
+
+
+System Conf
+-----------
+/etc/locale.gen     :       Stores information regarding language etc.
+/etc/vconsole.conf  :       ??
+/etc/locale.conf    :       ??
+/etc/localtime      :       Contains timezone information.
+
+
+
+
+Storage
+-------
+lsblk               :       Visually list devices with partitioning.
+
+
+
+Networks
+--------
+wifi-menu           :       Handy visual tool for connecting to wifi networks on command line.
+
+
+
+
+NTP
+---
+timedatectl         :       * set-ntp : true configure the timedate to update from ntp.
+                            * status  : give the timedate system status.
+
+tzselect            :       Select time zone
+
+hwclock             :       This is used to read or set the hardware clock.

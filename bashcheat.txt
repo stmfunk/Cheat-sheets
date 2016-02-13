@@ -9,3 +9,9 @@ Alt-f       :   Move forwards one word.
 !!          :   Execute the previous command again
 
 http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/
+
+
+ZSH
+===
+compsys         :       Tabcompletion system. 
+compinstall     :       Compsys configuration tool.

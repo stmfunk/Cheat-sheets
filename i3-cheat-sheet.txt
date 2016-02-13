@@ -1,3 +1,7 @@
+Basics
+------
+mod-Shift-e         :       Exit 
+
 Change layout : $mod+Shift+[jhkl]
 Alt-scrollwheel-click   :   Paste into urxvt
 
