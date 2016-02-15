@@ -1,8 +1,28 @@
-Change layout : $mod+Shift+[jhkl]
-Alt-scrollwheel-click   :   Paste into urxvt
+Basics
+------
+$mod+[jkl;]                         :       Move focus in direction specified (vim shifted one to left)
+$mod+v                              :       Make the next split vertical.
+$mod+h                              :       Make the next split horizontal.
+Change layout                       :       $mod+Shift+[jkl;]
+Alt-scrollwheel-click               :       Paste into urxvt
+$mod+d                              :       Open dmenu
 
+$mod+Shift+r                        :       Restart i3.
+$mod+e                              :       Exit i3
+
+Layouts
+-------
+$mod+e split[h/v]                   :       Distributed windows with equal screen space.
+$mod+s stacking                     :       One window gets whole container. List of available windows
+                                                on top of container.
+$mod+w tabbed                       :       Similiar to stacking but with a tabbed single line.
+$mod+f                              :       Fullscreen mode for window.
+$mod+num                            :       Move to workspace num
+
+$mod+Shift+Space                    :       Switch window to floating mode.
+
+Move window to new workspace $mod+Shift+num
 
 Amixer:
     amixer sset Master 40%[+-]      :       To increase master volume or set it
     amixer sset Master toggle       :       To toggle on or off master volume
-    
