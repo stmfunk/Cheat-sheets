@@ -1,0 +1,2 @@
+csrutil         :       Disable/enable the annoying sudo cripple mode in osx. (using those actual words).
+

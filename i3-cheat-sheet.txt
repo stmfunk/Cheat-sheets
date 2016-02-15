@@ -10,6 +10,8 @@ $mod+d                              :       Open dmenu
 $mod+Shift+r                        :       Restart i3.
 $mod+e                              :       Exit i3
 
+Alt-scrollwheel-click   :   Paste into urxvt
+
 Layouts
 -------
 $mod+e split[h/v]                   :       Distributed windows with equal screen space.
@@ -18,6 +20,8 @@ $mod+s stacking                     :       One window gets whole container. Lis
 $mod+w tabbed                       :       Similiar to stacking but with a tabbed single line.
 $mod+f                              :       Fullscreen mode for window.
 $mod+num                            :       Move to workspace num
+
+Alt-scrollwheel-click   :   Paste into urxvt
 
 $mod+Shift+Space                    :       Switch window to floating mode.
 

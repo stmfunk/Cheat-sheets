@@ -1,0 +1,5 @@
+arch-chroot         :       Change root directory (first arg) and shell (second arg).
+
+pacstrap            :       Used to install base packages.
+                            * -i  : ensure interative prompting
+                            * /dir base base-devel :   will install the base OS to /dir

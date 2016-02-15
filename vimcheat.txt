@@ -1,2 +1,42 @@
 Ctrl-A          :       Increment number under cursor
 Ctrl-X          :       Decrement number under cursor
+
+Movement
+--------
+''              :       Go to last cursor location
+*               :       Go to next occurence of word under cursor
+#               :       Go to previous occurence of word under cursor
+
+Completion
+----------
+C-p             :       Completes word to closest match.
+C-n             :       Completes word to first alphabetical match
+
+Windowing
+---------
+:sp             :       split horizontally
+:vsp            :       split vertically
+
+C-w             :       Enter window command
+C-w d           :       Move in direction key d
+C-w n+/-        :       Decrease/increase window size by n
+C-w _           :       Minimise all other splits
+C-w =           :       Equalise all splits
+
+Repetition
+----------
+N<cmd>          :       Perform N cmd times
+
+Visual Selection
+----------------
+va<obj>         :       Select object zone visually inclusively.
+vi<obj>         :       Select object zone visually exclusively.
+C-v             :       Visual Block mode
+
+Yanking
+-------
+P               :       Put before line
+
+Substitution
+------------
+s/fg/&c/        :       To add c to all occurences of fg.

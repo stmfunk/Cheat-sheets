@@ -1,0 +1,12 @@
+parted          :       File partitioning
+mkfs.sys        :       Tool to create the filesystems 'sys' on specified drive.
+
+
+Using Disks
+-----------
+mount /dev/X dir    :   Mount the special file X to dir.
+
+FileSystems
+-----------
+ext4            :       Journaled suitable for ssds
+
