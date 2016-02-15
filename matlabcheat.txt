@@ -1,0 +1,36 @@
+whos            :       Print current variables
+size            :       Matrix dimensions
+mean            :       Give mean of matrix rows
+sort            :       Sort values in given matri
+unix            :       Execute a unix command
+
+Basics
+======
+n:m             :       Give the list of numbers n to m
+I(x,y)          :       Index matrix
+I(x:y)          :       Index values x through y from matrix
+I(:)            :       Collapse I into vector
+
+Matrix Manipulation
+====== ============
+A'              :       Give the transpose of matrix A
+A * B           :       Matrix multiplication
+A .* B          :       . product of A and B
+
+Imaging
+=======
+imread          :       Read an image into matrix format
+imshow          :       Display image stored in matrix
+figure(n)       :       Change the figure window allowing you to diplay multiple
+                        images simultaneously.
+
+Plotting
+========
+plot            :       Simple linear plot, second argument specifies symbol to use. 
+grid on         :       Turn on grid lines in the plot
+
+bar             :       Plot values on a bar chart
+xlabel
+ylabel          :       Set the axis labels for plot
+axis            :       Allows you to specify the axis range as a matrix
+                          axis([xf xt yf yt])
