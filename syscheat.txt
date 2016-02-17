@@ -27,6 +27,11 @@ System Conf
 /etc/localtime      :       Contains timezone information.
 
 
+Audio
+-----
+Amixer:
+    amixer sset Master 40%[+-]      :       To increase master volume or set it
+    amixer sset Master toggle       :       To toggle on or off master volume
 
 
 Storage

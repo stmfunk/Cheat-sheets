@@ -55,6 +55,7 @@ Repetition
 ----------
 N<cmd>                      :       Perform N cmd times
 
+
 Visual Selection            
 ----------------            
 va<obj>                     :       Select object zone visually inclusively.
@@ -72,6 +73,10 @@ Searching
 
 :set hlsearch               :       Highlight search terms
 :noh                        :       Unset previous options.
+
+Options
+=======
+number                     :       Line numbering option
 
 Substitution
 ------------
