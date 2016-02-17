@@ -3,3 +3,8 @@ arch-chroot         :       Change root directory (first arg) and shell (second 
 pacstrap            :       Used to install base packages.
                             * -i  : ensure interative prompting
                             * /dir base base-devel :   will install the base OS to /dir
+
+Image Viewers
+-------------
+eog                 :       More full features than feh
+feh                 :       Basic image viewer

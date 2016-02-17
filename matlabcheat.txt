@@ -11,11 +11,15 @@ I(x,y)          :       Index matrix
 I(x:y)          :       Index values x through y from matrix
 I(:)            :       Collapse I into vector
 
+disp(A)         :       Display value of A (print).
+
 Matrix Manipulation
 ====== ============
 A'              :       Give the transpose of matrix A
 A * B           :       Matrix multiplication
 A .* B          :       . product of A and B
+
+prod(A)         :       Multiply all vector values together.
 
 Imaging
 =======

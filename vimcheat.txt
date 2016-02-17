@@ -1,42 +1,86 @@
-Ctrl-A          :       Increment number under cursor
-Ctrl-X          :       Decrement number under cursor
+Ctrl-A                      :       Increment number under cursor
+Ctrl-X                      :       Decrement number under cursor
+
+Undo
+----
+u                           :       Undo
+Ctrl-r                      :       Redo
+M
+U                           :       Undo all changes made to last line that was edited
 
 Movement
 --------
-''              :       Go to last cursor location
-*               :       Go to next occurence of word under cursor
-#               :       Go to previous occurence of word under cursor
+''                          :       Go to last cursor location
+*                           :       Go to next occurence of word under cursor
+#                           :       Go to previous occurence of word under cursor
 
-Completion
-----------
-C-p             :       Completes word to closest match.
-C-n             :       Completes word to first alphabetical match
+Commands
+========
+:retab                      :       Convert all tabs in document to tabs used in vim.
+!                           :       Override command modifier
+
+Advanced Feature            s
+-------- -------            - 
+C-p                         :       Completes word to closest match.
+C-n                         :       Completes word to first alphabetical match
+
+:ab y Yord                  :       Abberiviate Yord as y
+:una y                      :       To unset y
+
 
 Windowing
 ---------
-:sp             :       split horizontally
-:vsp            :       split vertically
+viewports                   :       Viewports allow you to view/edit multiple parts of the same file
+                                        at the same time. View ports are basically buffers.
+                                        You can use pane manipulation shortcuts to manipulate viewports.
+:sp                         :       split horizontally, C-w s
+:vsp                        :       split vertically, C-w v
 
-C-w             :       Enter window command
-C-w d           :       Move in direction key d
-C-w n+/-        :       Decrease/increase window size by n
-C-w _           :       Minimise all other splits
-C-w =           :       Equalise all splits
+C-w                         :       Enter window command
+C-w d                       :       Move in direction key d
+C-w n+/-                    :       Decrease/increase window size by n
+C-w _                       :       Minimise all other splits
+C-w =                       :       Equalise all splits
+
+C-w Shift-T                 :       Move current pane to new tab.
+C-w r                       :       Rotate viewports clockwise
+C-w R                       :       Rotate viewports anticlockwise
+
+
+Tabs
+----
+:tabc                       :       Close a tab
 
 Repetition
 ----------
-N<cmd>          :       Perform N cmd times
+N<cmd>                      :       Perform N cmd times
 
-Visual Selection
-----------------
-va<obj>         :       Select object zone visually inclusively.
-vi<obj>         :       Select object zone visually exclusively.
-C-v             :       Visual Block mode
+Visual Selection            
+----------------            
+va<obj>                     :       Select object zone visually inclusively.
+vi<obj>                     :       Select object zone visually exclusively.
+C-v                         :       Visual Block mode
 
 Yanking
 -------
-P               :       Put before line
+P                           :       Put before line
+
+Searching
+---------
+?for
+/for                        :       Search for 'for'
+
+:set hlsearch               :       Highlight search terms
+:noh                        :       Unset previous options.
 
 Substitution
 ------------
-s/fg/&c/        :       To add c to all occurences of fg.
+s/fg/&c/                    :       To add c to all occurences of fg.
+
+Mapping
+=======
+<silent>                    :       Sets it so that you do nnot see a command being executed.
+                                        (doesn't print the command being executed)
+:nmap <silent> <C-x> exec   :       Perform exec keystrokes when shortcut pressed
+                                        <CR> :  For carraige return
+                                        <Esc>:  For escape
