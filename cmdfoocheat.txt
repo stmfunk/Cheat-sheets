@@ -1,0 +1,2 @@
+find . -name "file"         :       Find all files named file in this directory
+                                        -iname  : case insensitive
