@@ -14,6 +14,10 @@ Movement
 *                           :       Go to next occurence of word under cursor
 #                           :       Go to previous occurence of word under cursor
 
+zz                          :       Center current line
+zt                          :       Move the current line to top of the window
+zz                          :       Move the current line to bottom of the window
+
 Commands
 ========
 :retab                      :       Convert all tabs in document to tabs used in vim.

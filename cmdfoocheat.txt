@@ -1,2 +1,9 @@
 find . -name "file"         :       Find all files named file in this directory
                                         -iname  : case insensitive
+
+lsusb                       :       List usb devices.
+
+Tools
+-----
+watch                       :       Periodically execute a command display result fullscreen
+                                        (curses application)
