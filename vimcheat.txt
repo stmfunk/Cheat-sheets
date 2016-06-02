@@ -1,4 +1,4 @@
-Ctrl-A                      :       Increment number under cursor
+Crl-A                      :       Increment number under cursor
 Ctrl-X                      :       Decrement number under cursor
 
 Undo
