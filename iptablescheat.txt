@@ -1,0 +1,2 @@
+-F                          :       Flush iptables and delete all rules.
+iptables-save               :       Save the current configuration so as to persist between reboots.

@@ -37,7 +37,10 @@ Amixer:
 Storage
 -------
 lsblk               :       Visually list devices with partitioning.
-
+du                  :       Give disk usage of files
+                                -d n : Recursively descend n directories   
+                                -h : human readable
+free                :       Can use to display memory usage. (Not OSX)
 
 
 Networks

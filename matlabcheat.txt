@@ -10,6 +10,7 @@ n:m             :       Give the list of numbers n to m
 I(x,y)          :       Index matrix
 I(x:y)          :       Index values x through y from matrix
 I(:)            :       Collapse I into vector
+I(1,:)          :       Return first row.
 
 disp(A)         :       Display value of A (print).
 
