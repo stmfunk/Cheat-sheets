@@ -4,7 +4,15 @@ pacstrap            :       Used to install base packages.
                             * -i  : ensure interative prompting
                             * /dir base base-devel :   will install the base OS to /dir
 
+tzselect            :       Select timezone.
+
+SUDO
+----
+visudo              :       Open sudoers file.
+su usrname -        :       Interactive prompt as username.
+
 Image Viewers
 -------------
 eog                 :       More full features than feh
 feh                 :       Basic image viewer
+

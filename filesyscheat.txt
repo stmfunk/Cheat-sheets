@@ -1,4 +1,5 @@
 parted          :       File partitioning
+fdisk           :       More file partitioning
 mkfs.sys        :       Tool to create the filesystems 'sys' on specified drive.
 
 

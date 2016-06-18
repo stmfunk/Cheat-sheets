@@ -1,4 +1,4 @@
-Crl-A                      :       Increment number under cursor
+Crl-A                       :       Increment number under cursor
 Ctrl-X                      :       Decrement number under cursor
 
 Undo
@@ -43,12 +43,17 @@ viewports                   :       Viewports allow you to view/edit multiple pa
 C-w                         :       Enter window command
 C-w d                       :       Move in direction key d
 C-w n+/-                    :       Decrease/increase window size by n
+C-w n</>                    :       Same principle but for vertical format.
 C-w _                       :       Minimise all other splits
 C-w =                       :       Equalise all splits
 
 C-w Shift-T                 :       Move current pane to new tab.
 C-w r                       :       Rotate viewports clockwise
 C-w R                       :       Rotate viewports anticlockwise
+
+Buffers
+-------
+C-6                         :       Switch buffers
 
 
 Tabs

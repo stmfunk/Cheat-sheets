@@ -1,2 +1,35 @@
-Admin
+Users
 =====
+Custom Users            :       You can define a custom user auth using AbstractBaseUser,
+                                    provided you meet the standard format.
+
+User Manager            :       Functions for create_user and create_superuser, and inputting password fields.
+
+Models
+======
+Managers                :       All models have a manager behind them which defines their creation
+                                    and referencing them.
+
+Migrations              :       Django stores all migrations, so if you want to rebuild your model in a way that
+                                    can't be done with a basic migrations you'll have to delete migrations.
+                                    If you call makemigrations appname it will create an initial migration for 
+                                    that app.
+
+Templates
+=========
+er.1            :       Index element 1 of er.
+
+views.py
+========
+This is where all requests are handled.
+
+Generic Views
+------- -----
+Generic views are classes that can be dropped into the view.py file. They
+function as a preformatted view and have default settings for connecting model and view together for
+standard operations like viewing information.
+
+DjangoREST
+==========
+Serializers             :           Handle the relationship between the Model and its JSON format.
+
