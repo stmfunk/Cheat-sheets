@@ -6,4 +6,5 @@ lsusb                       :       List usb devices.
 Tools
 -----
 watch                       :       Periodically execute a command display result fullscreen
-                                        (curses application)
+
+ss                          :       Socket statistics,  
