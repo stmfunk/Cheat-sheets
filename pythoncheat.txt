@@ -1,6 +1,10 @@
+Base
+====
+getattr         :           Returns reference to an attribute from an object, 
+                                when given an object and the string name of the attribute. 
 Libs
 ====
-gitpython       :       Library for manipulating git repositories.
+gitpython       :           Library for manipulating git repositories.
 
 argparse
 ---------
