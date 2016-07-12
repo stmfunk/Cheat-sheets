@@ -58,3 +58,7 @@ timedatectl         :       * set-ntp : true configure the timedate to update fr
 tzselect            :       Select time zone
 
 hwclock             :       This is used to read or set the hardware clock.
+
+SSHD
+----
+/usr/sbin/sshd -d   :       Start the ssh server with debug output.

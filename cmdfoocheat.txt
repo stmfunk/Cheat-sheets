@@ -8,3 +8,10 @@ Tools
 watch                       :       Periodically execute a command display result fullscreen
 
 ss                          :       Socket statistics,  
+
+cut                         :       Line editing by columns
+                                        -d'x': specify delimiter
+                                        -fn,m: select columns n and m
+tail                        :       Output end of the file.
+                                        -f: wait for additional lines to be added to file and 
+                                            output them.

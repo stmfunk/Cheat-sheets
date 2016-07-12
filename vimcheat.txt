@@ -50,7 +50,7 @@ Registers
 Numeric
 -------
 <C-a>                       
-<C-x>                      :       Increment/Decrement number under cursor. Will jump to the next 
+<C-x>                       :       Increment/Decrement number under cursor. Will jump to the next 
                                         number in the line if there is not one under the cursor
                                         and it can be give a count. Also works with  negative numbers.
 "=                                 The expression register, performs arithmetic on the values placed in it.
@@ -74,7 +74,7 @@ gr                          :       Single shot virtual replace mode.
 i                           :       Insert mode.
 Yanking
 -------
-P                           :       Put before line
+P                           :       Put before cursor
 
 Searching
 ---------
@@ -84,7 +84,7 @@ n                           :       Next occurence of the searched for term.
 N                           :       Go back to previous occurence.
 
 :set hls(earch)             :       Highlight search terms
-:noh                        :       Unset previous options.
+:noh                        :       Wipe the search highlighting on screen
 
 fx                          :       Go to next occurence of x in line.
 Fx                          :       Go to previous occurence of x in line.
@@ -97,8 +97,8 @@ tx                          :       Same as f but one char before.
 
 Advanced Features
 -------- -------- 
-<C-p>                         :       Completes word to closest match.
-<C-n>                         :       Completes word to first alphabetical match
+<C-p>                       :       Completes word to closest match.
+<C-n>                       :       Completes word to first alphabetical match
 
 :ab y Yord                  :       Abberiviate Yord as y
 :una y                      :       To unset y
@@ -112,20 +112,21 @@ viewports                   :       Viewports allow you to view/edit multiple pa
 :sp                         :       split horizontally, <C-w> s
 :vsp                        :       split vertically, <C-w> v
 
-<C-w>                         :       Enter window command
-<C-w> d                       :       Move in direction key d
-<C-w> n+/-                    :       Decrease/increase window size by n
-<C-w> n</>                    :       Same principle but for vertical format.
-<C-w> _                       :       Minimise all other splits
-<C-w> =                       :       Equalise all splits
+<C-w>                       :       Enter window command
+<C-w> q                     :       Close focused window pane
+<C-w> d                     :       Move in direction key d
+<C-w> n+/-                  :       Decrease/increase window size by n
+<C-w> n</>                  :       Same principle but for vertical format.
+<C-w> _                     :       Minimise all other splits
+<C-w> =                     :       Equalise all splits
 
-<C-w> Shift-T                 :       Move current pane to new tab.
-<C-w> r                       :       Rotate viewports clockwise
-<C-w> R                       :       Rotate viewports anticlockwise
+<C-w> Shift-T               :       Move current pane to new tab.
+<C-w> r                     :       Rotate viewports clockwise
+<C-w> R                     :       Rotate viewports anticlockwise
 
 Buffers
 -------
-<C-6>                         :       Switch buffers
+<C-6>                       :       Switch buffers
 
 
 Tabs
@@ -134,14 +135,29 @@ Tabs
 
 Visual Mode
 ====== ====
+v                           :       Toggle normal visual mode. Visual mode acts on a character range
+                                        it will not remember what selection operator waS USED.
+V                           :       Toggle linewise visual mode.
+<C-v>                       :       Visual Block mode
+<C-g>                       :       Enter select mode, which overwrites selection. (Similiar
+                                        to using c)
+
 va<obj>                     :       Select object zone visually inclusively.
 vi<obj>                     :       Select object zone visually exclusively.
-<C-v>                       :       Visual Block mode
+
+gv                          :       Reselect most recently selected text.
+o                           :       Move cursor to opposite side of text selection.
 
 c                           :       Replace selection enter insert mode.
 A                           :       Append after visual selection.
-<C-g>                       :       Enter select mode, which overwrites selection. (Similiar
-                                        to using c)
+U                           :       Change selection to uppercase.
+u                           :       Change selection to lowercase
+
+Visual Block Mode
+------ ----- ----
+<C-v>                       :       Enter visual block mode. Allows editing tabular data.
+$                           :       Extend selection to end of each line, (ragged visual block)
+
 
 Options
 =======
@@ -151,6 +167,18 @@ showcmd                     :       Display the command in normal mode as it is 
 nrformats                   :       Choose how vim interprets numbers (by default leading zeroes
                                         mean octal, etc).
 
+
+:set opt!                   :       Toggle option
+
+list                        :       Show invisibles (input specific characters for tab and newline)
+
+Tabs
+----
+tabstop                     :       Tell vim how many columns a tab counts for.
+expandtab                   :       Tabs are converted to spaces.
+shiftwidth                  :       How many columns text is indented with reindent operators (>>) 
+                                        and automatic indentation.
+
 Substitution
 ------------
 s/fg/&c/                    :       To add c to all occurences of fg.
@@ -159,7 +187,7 @@ Mapping
 =======
 <silent>                    :       Sets it so that you do nnot see a command being executed.
                                         (doesn't print the command being executed)
-:nmap <silent> <<C-x>> exec   :       Perform exec keystrokes when shortcut pressed
+:nmap <silent> <<C-x>> exec :       Perform exec keystrokes when shortcut pressed
                                         <CR> :  For carraige return
                                         <Esc>:  For escape
 :omap                       :       Used to define custom motion objects.
@@ -167,11 +195,40 @@ Mapping
 
 Command Mode
 ======= ====
+Range                       :       The first argument is always the address of the action.
+                                        If we type a number it is interpreted as a line number and the
+                                        cursor is moved to that line.
+Shortcuts                   :       Shortcuts available in insert mode are usable here to.
 :retab                      :       Convert all tabs in document to tabs used in vim.
 !                           :       Override command modifier
 
 @:                          :       Repeat last Ex command.
 &                           :       Repeat last search and replace command.
+$                           :       Represents the end of the file.
+%                           :       Represent the whole file.
+.                           :       Represents the address of the line the cursor is one.
+0                           :       Virtual line that represents the line before the first in the file.
+
+/{pat}/                     :       Specify address by pattern {pat},
+{addr}+n                    :       Specify address as n lines below addr.
+{addr}-n                    :       Specify address as n lines above addr.
+
+Text Commands
+-------------
+:[range] cmd {params}       :       Perform a command on a range of text. Params can be a buffer, a command etc.
+                                        If no range is given the cmd is executed on the line the cursor is currently
+                                        on.
+                                        range: Range can be given as a line number, a marker or a pattern.
+delete                      :       Delete range into buffer param.
+yank                        :       Yank range into buffer param.
+[p]ut                       :       Put buffer param into document at line range.
+copy                        :       Copy lines in range to line address param.
+                                        t: shorthand
+[m]ove                      :       Move lines in range to line address param.
+join                        :       Join lines in range to single line.
+normal                      :       Execute normal command param on text range.
+[s]ubstitute                :       Substitute command (syntax elsewhere)
+global                      :       Global command (syntax elsewhere)
 
 Insert Mode
 ====== ====
@@ -196,6 +253,7 @@ ESC
                                         default digraph conventions summarized :h digraph-default
                                         list of available digraphs :digraph
                                         more user friendly list :h digraph-table
+
 
 Extensions/Plugins
 ==================
